@@ -1,0 +1,57 @@
+CLOUDNIMBUS SUBSCRIPTION SERVICES AGREEMENT
+
+This Subscription Services Agreement (the "Agreement") is entered into as of the date of the last signature below (the "Effective Date") between CloudNimbus, Inc., a California corporation ("CloudNimbus"), and the customer identified in the Order Form ("Customer"). FICTIONAL SAMPLE FOR TESTING ONLY.
+
+1. SERVICES
+
+1.1 Subscription. Subject to this Agreement and payment of all fees, CloudNimbus grants Customer a non-exclusive, non-transferable right during the Subscription Term to access and use the CloudNimbus platform described in the Order Form (the "Services") for Customer's internal business purposes.
+
+1.2 Online Terms. Customer's use of the Services is also subject to CloudNimbus's Acceptable Use Policy and Support Policy located at www.cloudnimbus.example/legal, as CloudNimbus may modify them from time to time. CloudNimbus may update these terms by posting a revised version on its website, and Customer's continued use of the Services after posting constitutes acceptance.
+
+1.3 Availability. CloudNimbus will use commercially reasonable efforts to make the Services available, but does not guarantee that the Services will be uninterrupted or error free.
+
+2. FEES
+
+2.1 Fees. Customer will pay the fees set out in the Order Form annually in advance. All fees are non-cancellable and non-refundable.
+
+2.2 Price Changes. CloudNimbus may increase the fees at any time upon thirty (30) days' notice to Customer, and any increase will apply to the remainder of the then-current Subscription Term.
+
+3. CUSTOMER DATA
+
+3.1 Ownership. As between the parties, Customer retains ownership of all data that Customer submits to the Services ("Customer Data").
+
+3.2 License to CloudNimbus. Customer grants CloudNimbus a worldwide, perpetual, royalty-free license to use, copy, and modify Customer Data to provide the Services and to improve and develop CloudNimbus's products and services, including by training machine learning models. CloudNimbus may also compile aggregate data derived from Customer Data and use it for any purpose.
+
+3.3 Security. CloudNimbus will take reasonable steps to protect Customer Data.
+
+4. CONFIDENTIALITY
+
+4.1 Each party will hold the other party's Confidential Information in confidence and will not disclose it to third parties except to its employees and contractors who need to know it. "Confidential Information" means non-public information disclosed by one party to the other that is marked confidential or would reasonably be understood to be confidential.
+
+5. TERM AND TERMINATION
+
+5.1 Term. This Agreement begins on the Effective Date and continues for the initial subscription term stated in the Order Form (the "Subscription Term").
+
+5.2 Renewal. The Subscription Term will automatically renew for successive periods equal to the initial Subscription Term unless either party gives written notice of non-renewal at least ninety (90) days before the end of the then-current term.
+
+5.3 Termination for Breach. Either party may terminate this Agreement if the other party materially breaches it and fails to cure the breach within thirty (30) days after written notice. Upon any termination, Customer will pay all fees for the remainder of the Subscription Term.
+
+6. WARRANTIES AND DISCLAIMERS
+
+6.1 THE SERVICES ARE PROVIDED "AS IS." CLOUDNIMBUS DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+
+7. INDEMNIFICATION
+
+7.1 Customer will defend, indemnify, and hold harmless CloudNimbus from any claim arising from Customer Data or Customer's use of the Services.
+
+8. LIMITATION OF LIABILITY
+
+8.1 IN NO EVENT WILL CLOUDNIMBUS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES. CLOUDNIMBUS'S TOTAL LIABILITY ARISING OUT OF THIS AGREEMENT WILL NOT EXCEED THE FEES PAID BY CUSTOMER IN THE THREE (3) MONTHS PRECEDING THE CLAIM.
+
+9. GENERAL
+
+9.1 Publicity. CloudNimbus may identify Customer as a customer and use Customer's name and logo in its marketing materials.
+
+9.2 Governing Law. This Agreement is governed by the laws of the State of California.
+
+9.3 Entire Agreement. This Agreement, together with the Order Form and the online terms referenced in Section 1.2, is the entire agreement between the parties.

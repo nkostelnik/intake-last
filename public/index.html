@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intake Last</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a href="#/" class="brand">Intake <span>Last</span></a>
+    <nav>
+      <span id="ai-badge" class="badge"></span>
+      <a href="#/outbox" id="outbox-link" hidden>Outbox</a>
+      <button id="settings-btn" class="link">Settings</button>
+    </nav>
+  </header>
+  <main id="app"></main>
+
+  <dialog id="settings">
+    <form method="dialog" id="settings-form">
+      <h2>Settings</h2>
+      <p class="muted">Keys are stored locally in <code>data/settings.json</code> and only sent to Anthropic and Resend. Leave a field blank to keep its current value.</p>
+      <label>Anthropic API key <input id="apiKey" type="password" placeholder="sk-ant-..." autocomplete="off"></label>
+      <h3>Ready emails</h3>
+      <p class="muted small">Without a Resend key, emails are kept in the in-app Outbox instead of sent.</p>
+      <label>Resend API key <input id="resendKey" type="password" placeholder="re_..." autocomplete="off"></label>
+      <label>From address <input id="emailFrom"></label>
+      <label>Links in emails point to <input id="appUrl"></label>
+      <p id="settings-msg" class="error"></p>
+      <div class="row">
+        <button value="cancel" class="secondary">Cancel</button>
+        <button id="save-key" value="default">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
