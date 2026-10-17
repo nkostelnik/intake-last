@@ -47,3 +47,7 @@ Ready emails go through [Resend](https://resend.com) when `RESEND_API_KEY` is se
 - One email only: no reminder if the submitter never answers, and no email to Legal on escalations.
 - Links in emails point at this machine unless `APP_URL` is set to where the app is hosted.
 - Automated first-pass redline. Not legal advice.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

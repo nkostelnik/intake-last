@@ -8,7 +8,7 @@
     "test": "node --test \"test/*.test.js\"",
     "sample": "node scripts/make-sample.js"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.135.0",
