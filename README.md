@@ -1,5 +1,7 @@
 # Intake Last
 
+![Intake Last: review the contract first, ask the intake questions at download](docs/social-preview.png)
+
 Contract intake turned around. The business user submits the vendor's contract and nothing else. The contract is reviewed against the playbook right away, in every version the intake answers could call for. The intake questions come at the end, when the user wants the document. Their answers pick the version they download.
 
 Traditional intake asks the questions first, and people skip the form. Here the review happens whether or not anyone answers, and the questions are the last step before the download.
