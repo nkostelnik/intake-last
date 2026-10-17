@@ -7,10 +7,10 @@ Traditional intake asks the questions first, and people skip the form. Here the 
 ## How it works
 
 1. **Submit.** Upload a `.docx` or `.txt` with a name and email. No intake form.
-2. **Review every version up front.** The playbook (`playbook/vendor-saas.yaml`) has *questions* (business language) and *positions* (one per contract topic). Each position lists *cases* keyed to answers, for example "liability cap if spend is under $25k and no personal data". Each case is reviewed against the contract once, as a set of small edits pinned to paragraphs. 9 positions produce 16 variants, not 2^n whole documents.
+2. **Review every version up front.** The playbook (`playbook/vendor-saas.yaml`) has *questions* (business language) and *positions* (one per contract topic). Each position lists *cases* keyed to answers, for example "liability cap if spend is under $25k and no personal data". Each case is reviewed against the contract once, as a set of small edits pinned to paragraphs. 10 positions produce 17 variants, not 2^n whole documents.
 3. **Bring them back.** When the review finishes, the submitter gets one email: their contract is ready, answer N quick questions to download it, with a link straight to the questions. This is the moment they are motivated, so this is when the questions are asked.
 4. **Ask only what matters.** A question is skipped if no answer to it would change the redline for *this* contract (for example the contract already meets every renewal position). Questions with an escalating answer are always asked. `show_if` hides follow-ups that don't apply.
-5. **Deliver.** The user's answers pick one case per position. The edits are written into the user's **original** .docx as real tracked changes with a margin comment on each, so numbering, styles, fonts, tables, headers and footers are untouched. Only the runs an edit touches are rewritten, and they keep their formatting. (.txt uploads get a freshly built Word file.) Escalations (deal over $500k, sensitive data) tell the user to send it to Legal or Privacy. If two topics edit the same words, the first wins and the conflict is flagged.
+5. **Deliver.** The user's answers pick one case per position. The edits are written into the user's **original** .docx as real tracked changes with a margin comment on each, so numbering, styles, fonts, tables, headers and footers are untouched. Only the runs an edit touches are rewritten, and they keep their formatting. (.txt uploads get a freshly built Word file.) Escalations (deal over $250k, sensitive data) tell the user to send it to Legal or Privacy. If two topics edit the same words, the first wins and the conflict is flagged.
 
 A **lawyer view** (`#/m/<id>/lawyer`) shows every pre-reviewed case and its edits.
 
@@ -29,7 +29,7 @@ Ready emails go through [Resend](https://resend.com) when `RESEND_API_KEY` is se
 
 ## Layout
 
-- `playbook/vendor-saas.yaml`: questions and positions. **Demo positions, not approved by anyone.** Edit before relying on output.
+- `playbook/vendor-saas.yaml`: questions and positions. Drafted by Claude and reviewed by the playbook owner on 2026-10-17. Governing law is deliberately not covered.
 - `server/playbook.js`: loads and validates the playbook, resolves answers to cases.
 - `server/review.js`: one Claude call per case (contract cached across calls), structured output, edits validated against the real text.
 - `server/assemble.js`: picks cases from answers, merges edits, decides which questions to ask.

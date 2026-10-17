@@ -105,6 +105,7 @@ const MOCK_LOCATE = {
   renewal: /renew/i,
   price_increase: /increase/i,
   service_levels: /uptime|availab/i,
+  service_warranty: /"as is"|disclaim/i,
   unilateral_changes: /modify|update these terms|posting/i,
   ip_indemnity: /indemnif/i,
   publicity: /logo|publicity/i,

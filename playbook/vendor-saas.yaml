@@ -1,7 +1,8 @@
 # Intake Last playbook: vendor / SaaS agreements where WE are the customer.
 #
-# DEMO PLAYBOOK. These positions were drafted as a starting point and have not been
-# approved by anyone. Edit them to match your organization before relying on the output.
+# Positions drafted by Claude and reviewed by the playbook owner on 2026-10-17 (spend
+# escalation lowered to $250k, service warranty added; everything else confirmed as drafted).
+# Governing law is deliberately not covered. Automated first-pass redlines, not legal advice.
 #
 # Two parts:
 #
@@ -38,10 +39,10 @@ questions:
     answers:
       - { id: under_25k, label: "Under $25,000" }
       - { id: 25k_100k, label: "$25,000 to $100,000" }
-      - { id: 100k_500k, label: "$100,000 to $500,000" }
-      - id: over_500k
-        label: "Over $500,000"
-        escalate: Deals over $500,000 per year need a lawyer to review before signing. Send this redline to Legal along with your answers.
+      - { id: 100k_250k, label: "$100,000 to $250,000" }
+      - id: over_250k
+        label: "Over $250,000"
+        escalate: Deals over $250,000 per year need a lawyer to review before signing. Send this redline to Legal along with your answers.
 
   - id: data
     ask: What kind of our information will the vendor be able to see or store?
@@ -143,6 +144,12 @@ positions:
         language: Vendor shall make the Services available at least 99.9% of the time in each calendar month, excluding scheduled maintenance of which Vendor gives Customer at least 48 hours' notice. If Vendor fails to meet this commitment in any month, Customer shall receive a service credit of 10% of that month's fees for each full percentage point below the commitment. If Vendor fails to meet this commitment in any three (3) months within a twelve (12) month period, Customer may terminate this Agreement without penalty and receive a refund of all prepaid fees for the period after termination.
 
   # Positions with a single case and no `when` apply to every contract.
+  - id: service_warranty
+    topic: Service warranty
+    cases:
+      - position: Vendor must warrant that the services will perform materially in accordance with its documentation during the term. If they do not, Vendor must correct the nonconformity, and if it cannot do so within 30 days of notice, Customer may terminate and receive a refund of prepaid fees for the period after termination. Vendor's general disclaimer of other warranties may otherwise stay.
+        language: Vendor warrants that the Services will perform materially in accordance with the applicable documentation during the term. If the Services do not conform to this warranty, Vendor shall correct the nonconformity at no charge, and if Vendor fails to do so within thirty (30) days after Customer's written notice, Customer may terminate this Agreement and receive a refund of all prepaid fees for the period after termination.
+
   - id: unilateral_changes
     topic: Vendor changing the terms
     cases:

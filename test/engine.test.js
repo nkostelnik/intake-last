@@ -40,7 +40,7 @@ test("hidden questions fall back to their default", () => {
 test("different answers pick different pre-reviewed cases", () => {
   const results = mockResults();
   const pilot = assemble(pb, matter(results), { spend: "under_25k", data: "none", commitment: "pilot", critical: "inconvenient" });
-  const big = assemble(pb, matter(results), { spend: "100k_500k", data: "personal", ai: "yes", commitment: "ongoing", critical: "critical" });
+  const big = assemble(pb, matter(results), { spend: "100k_250k", data: "personal", ai: "yes", commitment: "ongoing", critical: "critical" });
   const caseFor = (a, topic) => a.topics.find((t) => t.topic === topic).case;
   assert.equal(caseFor(pilot, "Limitation of liability"), "liability_cap#1");
   assert.equal(caseFor(big, "Limitation of liability"), "liability_cap#4");
@@ -50,7 +50,7 @@ test("different answers pick different pre-reviewed cases", () => {
 });
 
 test("escalating answers are reported", () => {
-  const a = assemble(pb, matter(mockResults()), { spend: "over_500k", data: "sensitive", ai: "no", commitment: "ongoing", critical: "critical" });
+  const a = assemble(pb, matter(mockResults()), { spend: "over_250k", data: "sensitive", ai: "no", commitment: "ongoing", critical: "critical" });
   assert.equal(a.escalations.length, 2);
 });
 
